@@ -1,1 +1,104 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+$Kaluca-Colors: (
+  "Kaluca-primary":#2A142D,
+  "Kaluca-second":#5C4D77,
+  "Kaluca-third":#8C71AB,
+  "Kaluca-fourth":#FAD99A,
+  "Kaluca-fifth":#F3AB1E,
+  "Kaluca-sixth":#E38009
+);
+
+@font-face {
+  font-family: 'Big Owl';
+  src: url("./Typography/big-owl-font/Big\ Owl\ Regular.ttf");
+}
+@font-face {
+  font-family: 'Bold Scriblbe';
+  src: url("./Typography/bold-scribble-font/Bold\ Scribble\ Regular.ttf");
+}
+
+
+$theme-colors: map-merge($theme-colors, $Kaluca-Colors);
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+html{
+padding:0;
+margin:0;
+box-sizing: border-box;
+list-style: none;
+scroll-behavior: smooth;
+text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: .5rem; /* Ancho de la barra */
+  background-color: #FAD99A; /* Color de fondo */
+}
+
+body{
+  background-color:var(--bs-Kaluca-primary);
+}
+
+.Home {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  z-index: -2; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
+}
+
+
+
+
+.Separatorhome {
+  width: 140%;
+  position: relative;
+  left: -80px;
+  bottom: 0;
+  z-index: 100;
+}
+
+.col.align-items-center.texthome{
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+
+}
+
+.title{
+  font-family:'Big Owl';
+  font-size: 80px;
+  color: aliceblue;
+}
+
+.subtitle{
+  font-family:'Bold Scriblbe';
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.about-our{
+  background-color: #E38009;
+}
