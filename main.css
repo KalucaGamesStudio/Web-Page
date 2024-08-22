@@ -12548,65 +12548,6 @@ html {
 
 ::-webkit-scrollbar {
   height: 0;
-  width: 0.5rem; /* Ancho de la barra */
-  background-color: #FAD99A; /* Color de fondo */
-}
-
-body {
-  background-color: var(--bs-Kaluca-primary);
-}
-
-.Home {
-  position: relative;
-  z-index: 2;
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -2;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.Separatorhome {
-  width: 140%;
-  position: relative;
-  left: -80px;
-  bottom: 0;
-  z-index: 100;
-}
-
-.col.align-items-center.texthome {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
-}
-
-.title {
-  font-family: "Big Owl";
-  font-size: 80px;
-  color: aliceblue;
-}
-
-.subtitle {
-  font-family: "Bold Scriblbe";
-  font-size: 24px;
-  color: aliceblue;
-}
-
-.about-our {
-  background-color: #E38009;
+  width: 0.5rem;
+  background-color: #FAD99A;
 }/*# sourceMappingURL=main.css.map */

@@ -19,8 +19,6 @@ $Kaluca-Colors: (
   font-family: 'Bold Scriblbe';
   src: url("./Typography/bold-scribble-font/Bold\ Scribble\ Regular.ttf");
 }
-
-
 $theme-colors: map-merge($theme-colors, $Kaluca-Colors);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -37,68 +35,8 @@ text-decoration: none;
 
 ::-webkit-scrollbar {
   height: 0;
-  width: .5rem; /* Ancho de la barra */
-  background-color: #FAD99A; /* Color de fondo */
-}
-
-body{
-  background-color:var(--bs-Kaluca-primary);
-}
-
-.Home {
-  position: relative;
-  z-index: 2;
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  object-fit: cover;
-  z-index: -2; 
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: -1; 
+  width: .5rem;
+  background-color: #FAD99A; 
 }
 
 
-
-
-.Separatorhome {
-  width: 140%;
-  position: relative;
-  left: -80px;
-  bottom: 0;
-  z-index: 100;
-}
-
-.col.align-items-center.texthome{
-  padding-top: 30vh;
-  padding-bottom: 30vh;
-
-}
-
-.title{
-  font-family:'Big Owl';
-  font-size: 80px;
-  color: aliceblue;
-}
-
-.subtitle{
-  font-family:'Bold Scriblbe';
-  font-size: 24px;
-  color: aliceblue;
-}
-
-.about-our{
-  background-color: #E38009;
-}
